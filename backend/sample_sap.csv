@@ -1,0 +1,5 @@
+category,scope,activity_date,description,quantity,unit
+Fuel,Scope 1,2026-05-01,Diesel consumption for Plant A,1200,liters
+Fuel,Scope 1,2026-05-02,Petrol usage for generators,500,liters
+Procurement,Scope 3,2026-05-03,Steel procurement,2500,kg
+Fuel,Scope 1,2026-05-04,Suspicious fuel entry,-100,liters
