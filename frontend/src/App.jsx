@@ -6,12 +6,15 @@ function App() {
   const [records, setRecords] = useState([])
   const [file, setFile] = useState(null)
 
+  const BASE_URL =
+    'https://breathe-esg-assignment-sf55.onrender.com'
+
   const fetchRecords = async () => {
 
     try {
 
       const response = await axios.get(
-        'http://127.0.0.1:8000/api/records/'
+        `${BASE_URL}/api/records/`
       )
 
       setRecords(response.data)
@@ -28,7 +31,7 @@ function App() {
     try {
 
       await axios.post(
-        `http://127.0.0.1:8000/api/approve/${id}/`
+        `${BASE_URL}/api/approve/${id}/`
       )
 
       fetchRecords()
@@ -58,7 +61,7 @@ function App() {
     try {
 
       await axios.post(
-        'http://127.0.0.1:8000/api/upload/',
+        `${BASE_URL}/api/upload/`,
         formData
       )
 
